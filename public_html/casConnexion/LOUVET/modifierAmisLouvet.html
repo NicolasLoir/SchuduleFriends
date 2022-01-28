@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <link rel="stylesheet" href="../projet.css"/>
+	  <meta charset="utf-8"/> 
+  <title> Amis </title>
+  </head>
+<body>
+    <div class="rectangle"> Schedule Friends </div>
+    <hr>
+  <ul>
+  <li><a href="../pageAccueil.html"> Accueil</a></li>
+  <li><a href="../calendrier.html"> Calendrier</a></li>
+  <li><a href="../mesDispos.html"> Mes disponibilités</a></li>
+  <li><a href="../amis.html"> Amis</a></li>
+  <li><a href="../aPropos.html"> À propos</a></li>
+  <li><a href="../../indexDeconnexion.html"> Se déconnecter</a></li>
+</ul>
+  
+  <table>
+  <thead>
+  <tr>
+    <th scope="col">Nom</th>
+    <th scope="col">Prénom</th>
+    <th scope="col">Mail</th>
+    <th scope="col">Numéro de téléphone</th>
+  </tr>
+</thead>
+  <tr>
+    <th scope="row">Louvet</th>
+    <td>Titi</td>
+    <td>titi.louvet@u-psud.fr</td>
+    <td>0684738811</td>
+  </tr>
+</table>
+  <form method="post">
+    <button type="submit" formaction="../confirmerSuppressionAmis.html">Supprimer</button><br><br><br>
+    <p>Mettre à jour</p>
+  	  <input type="radio" id="amis" name="typeRelation" value="amis">
+      <label for="amis">Amis</label>
+      <br>
+      <input type="radio" id="famille" name="typeRelation" value="famille">
+      <label for="famille">Famille</label>
+      <br>
+      <input type="radio" id="travail" name="typeRelation" value="travail">
+      <label for="travail">Travail</label>
+      <br>
+ 	  <button type="submit" formaction="confirmationMAJ_LOUVET.html">Valider</button><br>
+  </form>
+  
+
+  	<div id="logo"><a href="../pageAccueil.html"> <img class="logo"  src="../image/logo.png" alt="Photo du logo" />	</a></div>
+
+</body>
+</html>

@@ -1,0 +1,176 @@
+*{
+	box-sizing: border-box;
+}
+
+
+h1{
+	text-align: center;
+	font-size: 251%;
+	color:grey;
+	font-family: charter;		
+}
+
+
+
+hr{
+	width: 30%;
+	margin: 10px auto;
+}
+
+body {
+	background-color: #242f44;
+	color: white;
+	font-family: Helvetica;
+}
+
+p{
+	font-family: Helvetica;
+}
+.rectangle{
+	font-size: 5em;
+	font-weight: bold;
+	text-align: center;
+	font-family:cursive;
+	margin: 0 auto;
+	font-family: charter;
+}
+
+a{ 
+text-decoration:none;
+}
+
+
+.logo{
+	 float:left; 
+}
+
+#logo{
+	clear:left;
+}
+
+
+
+.paragraphe{
+	font-size: 3.0em;
+	margin-top: 10%;	
+	font-weight: bold;
+	text-align: center;
+}
+
+.presentation{
+	text-align: center;
+	font-size: 1.0em;
+}
+
+
+
+input{
+	border-style: groove;
+    border: solid 4px #8c6b48;
+	padding:2%; 
+ 	font-size:50%;
+}
+
+form{
+	
+	margin:auto;
+	border-style: groove;
+    border: solid 4px #8c6b48;   
+    width: 30%;
+    font-size: 150%; 
+    text-align: center;	 
+    
+}
+
+button{
+	text-align: center;	  
+	font-size: 80%;  
+	padding:1%;
+	margin-top:5%;
+}
+
+.paragrapheApropos{
+	margin-left:10%;	
+	font-size: 1.2em;
+}
+
+
+
+.calendrierMesDispos{
+	float:left;
+	margin-left: 4%;
+	max-width: 90%;
+	height: auto;
+}
+
+h2{
+	text-align: center;
+	font-size: 350%;
+	font-family: charter;
+}
+
+
+tr {
+  background: #f4f7f8;
+  border-bottom: 1px solid #FFF;
+  margin-bottom: 5px;
+}
+
+th, td {
+  font-family: helvetica;
+  color: #242f44;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 20px;
+  text-align: left;
+  width: 33.3333%;
+  margin: 40px;
+}
+
+table {
+  height: 40%;
+  left: 10%;
+  margin: 20px auto;
+  overflow-y: scroll;
+  position: static;
+  width: 80%;
+}
+
+thead th {
+  text-align: center;
+  background: #8c6b48;
+  color: white;
+  font-family: charter;
+  font-size: 16px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #242f44;
+    border: solid 2px #8c6b48; 
+	margin: 20px auto;
+	width: 64%;
+}
+
+li {
+    float:left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+li a:hover {
+    background-color: #8c6b48;
+}
+

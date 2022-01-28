@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <link rel="stylesheet" href="projet.css"/>
+	  <meta charset="utf-8"/> 
+  <title> Calendrier </title>
+  </head>
+<body>
+    <div class="rectangle"> Schedule Friends </div>
+    <hr>
+   <ul>
+  <li><a href="pageAccueil.html"> Accueil</a></li>
+  <li><a href="calendrier.html"> Calendrier</a></li>
+  <li><a href="mesDispos.html"> Mes disponibilités</a></li>
+  <li><a href="amis.html"> Amis</a></li>
+  <li><a href="aPropos.html"> À propos</a></li>
+  <li><a href="../indexDeconnexion.html"> Se déconnecter</a></li>
+</ul>
+	<form class="inscription" method="post">
+  	  <input type="text" name="nom" placeholder="Nom de l'événement" ><br>
+	  <input type="text" name="jour" placeholder="Jour" ><br>
+	  <label for="appt">A quelle heure êtes vous disponible ?</label><br>
+		   <input type="time" id="appt" name="appt" min="00:00" max="23:59" ><br>
+	  <p>Qui peut voir cet événement ?</p>
+	  <input type="radio" id="amis" name="typeRelation" value="amis">
+      <label for="amis">Amis</label>
+      <br>
+      <input type="radio" id="famille" name="typeRelation" value="famille">
+      <label for="famille">Famille</label>
+      <br>
+      <input type="radio" id="travail" name="typeRelation" value="travail">
+      <label for="travail">Travail</label>
+      <br>
+ 	  <button type="submit" formaction="mesDispos-Ajout.html">Créer l'événement</button>
+ 	  <br>
+	</form>
+
+  	<div id="logo"><a href="pageAccueil.html"> <img class="logo"  src="image/logo.png" alt="Photo du logo" />	</a></div>
+
+</body>
+</html>

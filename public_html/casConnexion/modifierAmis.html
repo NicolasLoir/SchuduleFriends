@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <link rel="stylesheet" href="projet.css"/>
+	  <meta charset="utf-8"/> 
+  <title> Amis </title>
+  </head>
+<body>
+    <div class="rectangle"> Schedule Friends </div>
+    <hr>
+   <ul>
+  <li><a href="pageAccueil.html"> Accueil</a></li>
+  <li><a href="calendrier.html"> Calendrier</a></li>
+  <li><a href="mesDispos.html"> Mes disponibilités</a></li>
+  <li><a href="amis.html"> Amis</a></li>
+  <li><a href="aPropos.html"> À propos</a></li>
+  <li><a href="../indexDeconnexion.html"> Se déconnecter</a></li>
+</ul>
+  
+  <form  method="post">
+  	<p>Bidule</p>
+    <button type="submit" formaction="confirmerSuppressionAmis.html">Supprimer</button><br><br><br>
+    <p>Mettre à jour</p>
+  	  <input type="radio" id="amis" name="typeRelation" value="amis">
+      <label for="amis">Amis</label>
+      <br>
+      <input type="radio" id="famille" name="typeRelation" value="famille">
+      <label for="famille">Famille</label>
+      <br>
+      <input type="radio" id="travail" name="typeRelation" value="travail">
+      <label for="travail">Famille</label>
+      <br>
+ 	  <button type="submit" formaction="confirmationMAJ-ami.html">Valider</button><br>
+  </form>
+  
+
+  	<div id="logo"><a href="pageAccueil.html"> <img class="logo"  src="image/logo.png" alt="Photo du logo" />	</a></div>
+
+</body>
+</html>
