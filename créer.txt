@@ -1,0 +1,55 @@
+ CREATE TABLE UTILISATEUR(
+   idUtilisateur INT,
+   motDePasse VARCHAR(50),
+   nomU VARCHAR(50),
+   prenom VARCHAR(50),
+   mail VARCHAR(50) UNIQUE,
+   tel INT UNIQUE,
+   PRIMARY KEY(idUtilisateur)
+);
+
+CREATE TABLE PAYS(
+   idPays INT,
+   nomPays VARCHAR(50),
+   PRIMARY KEY(idPays)
+);
+
+CREATE TABLE LIEU(
+   idLieu INT,
+   ville VARCHAR(50) UNIQUE,
+   idPays INT NOT NULL,
+   PRIMARY KEY(idLieu),
+   FOREIGN KEY(idPays) REFERENCES PAYS(idPays)
+);
+
+CREATE TABLE EVENEMENT(
+   idEvenement INT,
+   nom VARCHAR(50),
+   dateEvenement DATETIME ,
+   idLieu INT NOT NULL,
+   idUtilisateur INT NOT NULL,
+   PRIMARY KEY(idEvenement),
+   FOREIGN KEY(idLieu) REFERENCES LIEU(idLieu),
+   FOREIGN KEY(idUtilisateur) REFERENCES UTILISATEUR(idUtilisateur)
+);
+
+CREATE TABLE connait(
+   idUtilisateur INT,
+   idUtilisateur_1 INT,
+   typeConnaissance VARCHAR(50),
+   PRIMARY KEY(idUtilisateur, idUtilisateur_1),
+   FOREIGN KEY(idUtilisateur) REFERENCES UTILISATEUR(idUtilisateur),
+   FOREIGN KEY(idUtilisateur_1) REFERENCES UTILISATEUR(idUtilisateur)
+);
+
+CREATE TABLE visible(
+   idUtilisateur INT,
+   idEvenement INT,
+   TypeVisibilite VARCHAR(50),
+   PRIMARY KEY(idUtilisateur, idEvenement),
+   FOREIGN KEY(idUtilisateur) REFERENCES UTILISATEUR(idUtilisateur),
+   FOREIGN KEY(idEvenement) REFERENCES EVENEMENT(idEvenement),
+   constraint verif check (TypeVisibilite IN (‘amis’, ‘famille’, ‘travail’))
+);
+
+
